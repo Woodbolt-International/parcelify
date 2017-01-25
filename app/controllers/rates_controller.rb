@@ -60,6 +60,7 @@ class RatesController < ShopifyApp::AuthenticatedController
       :min_grams,
       :max_grams,
       :code,
+      :notes,
       conditions_attributes: condition_params,
       product_specific_prices_attributes: product_specific_price_params
     )
