@@ -12,7 +12,7 @@ class CreateShippingCarrierJob < ApplicationJob
       end
 
       carrier_service = ShopifyAPI::CarrierService.create(
-        name: "Parcelify",
+        name: "Nutrabolt - Parcelify",
         callback_url: "#{Rails.configuration.application_url}/callback/#{shop.id}.json",
         format: "json",
         service_discovery: true
